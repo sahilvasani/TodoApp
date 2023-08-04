@@ -1,0 +1,142 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: white;
+}
+.App-label {
+  margin: 0px 0 5px 0;
+  padding: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 30px;
+  background: rgb(238, 237, 237);
+}
+.input-main-div {
+  display: flex;
+  gap: 25px;
+  padding: 25px 20px;
+  background: rgb(238, 237, 237);
+}
+.textfield:first-child {
+  width: 200px;
+}
+.textfield {
+  width: 500px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 15px;
+}
+.textfield:focus {
+  outline: 2px solid skyblue;
+}
+.textfield:hover {
+  outline: 2px solid rgb(207, 233, 243);
+}
+.input-wrapper-button {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 550px;
+}
+.submit-button {
+  height: 44px;
+  width: 150px;
+  color: white;
+  background-color: rgb(91, 189, 228);
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: rgb(67, 148, 180);
+}
+.export-button {
+  height: 44px;
+  width: 150px;
+  color: white;
+  background-color: rgb(137, 180, 67);
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.export-button:hover {
+  background-color: rgb(83, 110, 40);
+}
+h3 {
+  font-weight: 200;
+  text-shadow: 1px 1px 3px gray;
+}
+.container {
+  height: calc(100vh - 43vh);
+  width: 80vw;
+  margin: 0 auto;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.small-box {
+  width: 40%;
+  box-shadow: 1px 1px 4px 1px gray;
+  overflow: auto;
+}
+.task {
+  border: 1px solid white;
+  margin: auto;
+  box-shadow: 1px 3px 8px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.task-card {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.task-data {
+  width: 70%;
+  padding-left: 15px;
+}
+.card-text {
+  text-align: start;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: wrap;
+  width: 100%;
+}
+.task-button {
+  display: flex;
+  font-size: 30px;
+  padding: 20px;
+  gap: 15px;
+}
+.dragged {
+  background-color: rgba(200, 200, 200, 0.3);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.small-box::-webkit-scrollbar {
+  width: 5px;
+}
+.small-box::-webkit-scrollbar-track {
+  background-color: rgb(194, 194, 194);
+}
+.small-box::-webkit-scrollbar-thumb {
+  background-color: skyblue;
+}
+
+.dragged-over {
+  background: rgba(255, 0, 0, 0.2);
+  .task {
+    background: rgba(255, 0, 0, 0.1);
+  }
+}
